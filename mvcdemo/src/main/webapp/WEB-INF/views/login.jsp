@@ -7,6 +7,22 @@
 <title>Insert title here</title>
 </head>
 <body>
-	This is login page.
+THis is Login Page
+
+<table>
+<form action="/auth/login.html" method="post">
+<tr>
+<td>UserName
+</td>
+<td><input type="text" name="userName" />
+</tr>
+<tr>
+<td>Password
+</td>
+<td><input type="text" name="password" />
+</tr>
+<td><input type="submit"/></td>
+</form>
+</table>
 </body>
 </html>
