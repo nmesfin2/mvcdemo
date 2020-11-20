@@ -7,9 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hello From Spring Core
-	<div>
-		<a href="/auth/login.html">Login</a>
-	</div>
+	This is login page.
 </body>
 </html>
