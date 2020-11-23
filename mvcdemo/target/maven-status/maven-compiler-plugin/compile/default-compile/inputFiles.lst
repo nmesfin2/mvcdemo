@@ -4,4 +4,6 @@
 /home/ubuntu/git/mvcdemo/mvcdemo/src/main/java/com/mvcdemo/config/MyWebAppInitializer.java
 /home/ubuntu/git/mvcdemo/mvcdemo/src/main/java/com/mvcdemo/controller/AuthController.java
 /home/ubuntu/git/mvcdemo/mvcdemo/src/main/java/com/mvcdemo/controller/HomeController.java
+/home/ubuntu/git/mvcdemo/mvcdemo/src/main/java/com/mvcdemo/interceptor/AdminInterceptor.java
 /home/ubuntu/git/mvcdemo/mvcdemo/src/main/java/com/mvcdemo/config/WebConfig.java
+/home/ubuntu/git/mvcdemo/mvcdemo/src/main/java/com/mvcdemo/interceptor/GuestInterceptor.java
