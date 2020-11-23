@@ -14,7 +14,7 @@ THis is Login Page
 <tr>
 <td>UserName
 </td>
-<td><input type="text" name="userName" />
+<td><input type="text" name="userName" /> <div>${userName}</div>
 </tr>
 <tr>
 <td>Password
