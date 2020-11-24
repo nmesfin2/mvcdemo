@@ -8,70 +8,70 @@
     <failOnMissingWebXml>false</failOnMissingWebXml>
   </properties>
    <dependencies>
-    <!-- Hibernate Validator -->
-   <dependency>
-     <groupId>org.hibernate</groupId>
-     <artifactId>hibernate-validator</artifactId>
-     <version>5.4.1.Final</version>
-   </dependency>
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+   		 <!-- Hibernate Validator -->
+	   <dependency>
+	     <groupId>org.hibernate</groupId>
+	     <artifactId>hibernate-validator</artifactId>
+	     <version>5.4.1.Final</version>
+	   </dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>5.0.5.RELEASE</version>
 		</dependency>
-    <!-- Spring MVC Dependency -->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-webmvc</artifactId>
-      <version>4.3.7.RELEASE</version>
-    </dependency>
+	    <!-- Spring MVC Dependency -->
+	    <dependency>
+	      <groupId>org.springframework</groupId>
+	      <artifactId>spring-webmvc</artifactId>
+	      <version>4.3.7.RELEASE</version>
+	    </dependency>
 
-    <!-- JSTL Dependency-->
-    <dependency>
-      <groupId>javax.servlet.jsp.jstl</groupId>
-      <artifactId>javax.servlet.jsp.jstl-api</artifactId>
-      <version>1.2.1</version>
-    </dependency>
-    <dependency>
-      <groupId>taglibs</groupId>
-      <artifactId>standard</artifactId>
-      <version>1.1.2</version>
-    </dependency>
+	    <!-- JSTL Dependency-->
+	    <dependency>
+	      <groupId>javax.servlet.jsp.jstl</groupId>
+	      <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+	      <version>1.2.1</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>taglibs</groupId>
+	      <artifactId>standard</artifactId>
+	      <version>1.1.2</version>
+	    </dependency>
+	    
+	    <!-- Servlet Dependency -->
+	    <dependency>
+	      <groupId>javax.servlet</groupId>
+	      <artifactId>javax.servlet-api</artifactId>
+	      <version>3.1.0</version>
+	      <scope>provided</scope>
+	    </dependency>
     
-    <!-- Servlet Dependency -->
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
-      <scope>provided</scope>
-    </dependency>
-    
-    <!-- JSP Dependency -->
-    <dependency>
-      <groupId>javax.servlet.jsp</groupId>
-      <artifactId>javax.servlet.jsp-api</artifactId>
-      <version>2.3.1</version>
-      <scope>provided</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <version>1.18.16</version>
-    <scope>provided</scope>
-</dependency>
-    <dependency>
-		<groupId>org.springframework.data</groupId>
-		<artifactId>spring-data-jpa</artifactId>
-		<version>2.0.6.RELEASE</version>
-	</dependency>
+	    <!-- JSP Dependency -->
+	    <dependency>
+	      <groupId>javax.servlet.jsp</groupId>
+	      <artifactId>javax.servlet.jsp-api</artifactId>
+	      <version>2.3.1</version>
+	      <scope>provided</scope>
+	    </dependency>
+	    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.16</version>
+		    <scope>provided</scope>
+		</dependency>
+	    <dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>2.0.6.RELEASE</version>
+		</dependency>
 	<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
-<dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-simple</artifactId>
-    <version>1.6.1</version>
-</dependency>
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-simple</artifactId>
+		    <version>1.6.1</version>
+		</dependency>
 	
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -92,17 +92,17 @@
 			<version>2.5.0</version>
 		</dependency>
 		<dependency>
-    <groupId>org.javassist</groupId>
-    <artifactId>javassist</artifactId>
-    <version>3.23.1-GA</version>
-</dependency>
+		    <groupId>org.javassist</groupId>
+		    <artifactId>javassist</artifactId>
+		    <version>3.23.1-GA</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
-<dependency>
-    <groupId>javax.xml.bind</groupId>
-    <artifactId>jaxb-api</artifactId>
-    <version>2.1</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+		<dependency>
+		    <groupId>javax.xml.bind</groupId>
+		    <artifactId>jaxb-api</artifactId>
+		    <version>2.1</version>
+		</dependency>
 
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 		<dependency>
@@ -110,7 +110,23 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.15</version>
 		</dependency>
+		<dependency>
+			<groupId>org.sonarsource.scanner.maven</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.2</version>
+		</dependency>
   </dependencies>
+  <profiles>
+	<profile>
+		<id>sonar</id>
+		<activation>
+		<activeByDefault>true</activeByDefault>
+		</activation>
+		<properties>
+		
+		</properties>
+	</profile>
+	</profiles>
   <build>
     <sourceDirectory>src/main/java</sourceDirectory>
     <resources>
@@ -135,7 +151,7 @@
             <artifactId>tomcat7-maven-plugin</artifactId>
             <version>2.2</version>
             <configuration>
-                <port>9000</port>   
+                <port>9005</port>   
                 <path>/</path>  
             </configuration>
         </plugin>
